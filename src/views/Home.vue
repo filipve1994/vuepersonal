@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Hero />
+    <FeaturedPosts />
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
 
@@ -30,10 +31,12 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import BLOGENTRIES from "@/statics/data/blogs.json";
 import Hero from "../components/Hero/Hero";
+import FeaturedPosts from "../components/Blog/Featured-Posts/Featured-Posts";
 
 export default {
   name: "home",
   components: {
+    FeaturedPosts,
     Hero,
     HelloWorld
   },
