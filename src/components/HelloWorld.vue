@@ -91,14 +91,24 @@
         >
       </li>
     </ul>
+
+    <Cards />
   </div>
 </template>
 
 <script>
+import Cards from "./Cards/Cards.vue";
+
 export default {
   name: "HelloWorld",
+  components: {
+    Cards
+  },
   props: {
     msg: String
+  },
+  data() {
+    return {};
   }
 };
 </script>
