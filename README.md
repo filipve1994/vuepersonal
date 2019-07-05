@@ -37,4 +37,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - https://www.sitepoint.com/bootstrap-vue-js-bootstrap-vue/
 - https://medium.com/@j_lim_j/summary-of-sass-tutorial-by-net-ninja-for-a-vue-js-project-part-1-of-2-6ee9dfa05aad
 - https://dev.to/lynnewritescode/my-scss-setup-within-a-vue-cli-3-project-4jan
+- https://dev.to/josephharveyangeles/creating-a-simple-blog-using-vue-with-markdown-2omd
 
