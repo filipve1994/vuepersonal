@@ -1,0 +1,207 @@
+.Resume {
+
+
+
+
+
+
+    // Vars
+
+    // Support
+
+    // Module
+    & {
+        //
+    }
+
+    // Facets
+
+    // States
+}
+
+.resume2 .header-intro-resume {
+    height: 320px;
+}
+
+.resume2 .theme-bg-primary {
+    background-color: #41A4F5;
+}
+
+.resume2 .header-intro-resume .container {
+    max-width: 1000px;
+}
+
+.resume2 h2 {
+    color: #fff;
+}
+
+.resume2 a.theme-btn-on-bg, .resume2 .theme-btn-on-bg {
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    border: none;
+}
+
+.resume2 .download-resume {
+    right: 15px;
+    top: 0;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+.svg-inline--fa.fa-fw {
+    width: 1.25em;
+}
+
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+
+.resume2 .resume-wrapper {
+    border: none;
+    margin-top: -233px;
+    padding-bottom: 100px;
+}
+
+.resume2 .resume-wrapper-inner {
+    max-width: 1000px;
+}
+
+.resume2 .resume-header {
+    background: #434E5E;
+    color: rgba(255,255,255,0.9);
+    height: 220px;
+}
+
+.resume2 .resume-header .picture {
+    width: 220px;
+}
+
+
+.resume2 .resume-header .name {
+    font-size: 2.25rem;
+    letter-spacing: 0.175rem;
+    font-weight: 900;
+}
+
+.resume2 .resume-header .title {
+    font-size: 1.5rem;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.resume2 .resume-header a {
+    color: rgba(255,255,255,0.6);
+}
+
+.resume2 .resume-social {
+    font-size: 0.875rem;
+}
+
+.resume2 .resume-social .fa-container {
+    font-size: 1rem;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: .125rem;
+    background: white;
+    color: #434E5E;
+}
+
+.resume2 .resume-section-title {
+    font-size: 1.25rem;
+    position: relative;
+    color: #434E5E;
+}
+
+.resume2 .resume-section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #8d9aad;
+}
+
+.resume2 .resume-section-content {
+    color: #58677c;
+}
+
+.resume2 .resume-section-title {
+    font-size: 1.25rem;
+    position: relative;
+    color: #434E5E;
+}
+
+.resume-main .item-title {
+    font-size: 1rem;
+}
+
+.resume-main .item-meta {
+    font-size: 0.75rem;
+}
+
+.resume-main .item-content {
+    font-size: 0.875rem;
+}
+
+.resume2 .resume-timeline-item-desc-heading {
+    font-size: 1rem;
+}
+
+.resume2 .badge {
+    padding: 0.35em 0.7em;
+    padding-bottom: 0.4em;
+}
+
+
+@media (min-width: 992px) {
+    .resume-aside {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+    }
+}
+
+.resume-aside .item {
+    font-size: 0.875rem;
+}
+
+.resume-aside .item-title {
+    font-size: 1rem;
+}
+
+.resume2 .resume-skill-name {
+    font-size: 0.8125rem;
+    color: #434E5E;
+}
+
+.resume2 .resume-progress {
+    height: 0.6rem;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+

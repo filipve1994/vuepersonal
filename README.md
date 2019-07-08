@@ -39,3 +39,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - https://dev.to/lynnewritescode/my-scss-setup-within-a-vue-cli-3-project-4jan
 - https://dev.to/josephharveyangeles/creating-a-simple-blog-using-vue-with-markdown-2omd
 
+## handy sites
+
+- https://alligator.io/vuejs/dynamic-styles/
+- https://michaelnthiessen.com/vue-props-vs-data/
+- 
