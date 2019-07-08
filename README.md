@@ -43,4 +43,18 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - https://alligator.io/vuejs/dynamic-styles/
 - https://michaelnthiessen.com/vue-props-vs-data/
+- https://github.com/Justineo/vue-awesome/tree/master/src/icons/regular
 - 
+
+## tips
+
+### to read json in page:
+
+1. import BLOGENTRIES from "@/statics/data/blogs.json"; in <script> in .vue component or view
+
+2. make function in computed: {} part that returns json entries
+
+3. loop over entries
+
+=> see example views/Home.vue
+
