@@ -26,7 +26,6 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import BLOGENTRIES from "@/statics/data/blogs.json";
 import Hero from "../components/Hero/Hero";
 import FeaturedPosts from "../components/Blog/Featured-Posts/Featured-Posts";
@@ -35,8 +34,7 @@ export default {
   name: "home",
   components: {
     FeaturedPosts,
-    Hero,
-    HelloWorld
+    Hero
   },
   computed: {
     entries() {

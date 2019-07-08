@@ -1,0 +1,228 @@
+.Cheatsheets {
+
+    .fullwidth {
+        container: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    // Vars
+
+    // Support
+
+    // Module
+    & {
+        //
+    }
+
+    // Facets
+
+    // States
+}
+
+.section-title__v2 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.section-title__v2:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: #54B689;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-title__v2 h2 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 27px;
+    position: relative;
+}
+
+.section-title__v2 h2:before {
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    right: 0px;
+    top: 12px;
+    height: 1px;
+    content: '';
+    background-color: #f5f5f5;
+}
+
+.section-title__v2 span {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0px 15px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+//-----------------------------------------
+
+.pages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pages-list code {
+    color: #ffffff;
+}
+
+.pages-list>.item {
+    flex: 0 0 100%;
+
+    &.article {
+        flex: 0 0 50%;
+    }
+}
+
+.pages-list>.article {
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    padding: 4px 0;
+    color: #92a0ad;
+
+    &:visited {
+        color: #92a0ad;
+
+        >.info>.slug {
+            color: #345;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: #678;
+    }
+
+    &:hover>.info>.title,
+    &:focus>.info>.title {
+        opacity: 1;
+        color: #745fb5;
+    }
+
+    >.info {
+        >.slug {
+            color: #111;
+        }
+
+        >.title {
+            opacity: 0;
+
+            &::before {
+                content: '';
+                margin: 0 4px;
+            }
+        }
+
+    }
+}
+
+.pages-list>.category {
+    font-size: 15px;
+    border-bottom: solid 1px rgba(102, 119, 136, 0.2);
+    margin: 16px 0;
+    padding: 0 0 16px;
+    font-weight: 400;
+    color: #745fb5;
+}
+
+@media (min-width: 581px) {
+    .pages-list>.item.top-sheet {
+        flex: 0 0 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pages-list>.article>.info>.title {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .pages-list>.category {
+        font-size: calc(15px + 1 * ((100vw - 480px)/288));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .pages-list>.category {
+        font-size: calc(16px + 0 * ((100vw - 768px)/512));
+    }
+}
+
+@media (min-width: 1280px) {
+    .pages-list>.category {
+        font-size: 16px;
+    }
+}
+
+.top-sheet.top-sheet {
+    padding: 4px;
+    text-decoration: none;
+
+    >.info {
+        display: block;
+        background: #745fb5;
+        color: #fff;
+        text-align: left;
+        padding: 16px;
+        width: auto;
+        border-radius: 3px;
+        box-shadow: 0 1px 1px rgba(102, 119, 136, 0.55);
+        text-shadow: 0 1px 1px rgba(51, 68, 85, 0.3);
+        white-space: nowrap;
+    }
+
+    &:hover>.info,
+    &:focus>.info {
+        box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3);
+    }
+
+    &:nth-of-type(3n+1) {
+        >.info {
+            background: linear-gradient(15deg, #745fb5, #9a6dbb);
+        }
+
+        &:hover>.info,
+        &:focus>.info {
+            background: #5f4aa1;
+        }
+    }
+
+    &:nth-of-type(3n+2) {
+        >.info {
+            background: linear-gradient(15deg, #678, #6f8793);
+        }
+
+        &:hover>.info,
+        &:focus>.info {
+            background: #556371;
+        }
+    }
+
+    &:nth-of-type(3n+3) {
+        >.info {
+            background: linear-gradient(15deg, #14af83, #15b89a);
+        }
+
+        &:hover>.info,
+        &:focus>.info {
+            background: #108b68;
+        }
+    }
+
+    >.info>.title {
+        display: none;
+    }
+}

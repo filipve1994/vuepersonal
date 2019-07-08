@@ -14,10 +14,10 @@
           <b-navbar-nav class="ml-auto">
             <b-nav-item href="/">Home</b-nav-item>
             <b-nav-item-dropdown  text="Blog" right>
-              <b-dropdown-item href="/blog/tips">Tips</b-dropdown-item>
-              <b-dropdown-item href="/blog/tags">Tags</b-dropdown-item>
-              <b-dropdown-item href="/blog/categories">Categories</b-dropdown-item>
-              <b-dropdown-item href="/blog/cheatsheets">Cheatsheets</b-dropdown-item>
+              <b-dropdown-item href="/tips">Tips</b-dropdown-item>
+              <b-dropdown-item href="/tags">Tags</b-dropdown-item>
+              <b-dropdown-item href="/categories">Categories</b-dropdown-item>
+              <b-dropdown-item href="/cheatsheets">Cheatsheets</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item href="/about">About</b-nav-item>
