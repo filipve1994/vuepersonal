@@ -58,3 +58,54 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 => see example views/Home.vue
 
+```
+<template>
+  <div class="home">
+    <Hero />
+    <FeaturedPosts />
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+
+    <div class="sections">
+      <div
+        v-for="(section, index) in Object.keys(entries)"
+        :key="index"
+        class="group"
+      >
+        <h2 class="center">{{ section }}</h2>
+        <div class="section" v-for="entry in entries[section]" :key="entry.id">
+          <div class="entry">
+            <h3 @click="$router.push({ name: entry.id })">
+              {{ entry.title }}
+              <span class="subtitle">{{ entry.date }}</span>
+            </h3>
+            <p>{{ entry.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+import BLOGENTRIES from "@/statics/data/blogs.json";
+import Hero from "../components/Hero/Hero";
+import FeaturedPosts from "../components/Blog/Featured-Posts/Featured-Posts";
+
+export default {
+  name: "home",
+  components: {
+    FeaturedPosts,
+    Hero,
+    HelloWorld
+  },
+  computed: {
+    entries() {
+      return BLOGENTRIES;
+    }
+  }
+};
+</script>
+```

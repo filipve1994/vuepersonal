@@ -34,7 +34,7 @@
             >
               <div class="primary-info">
                 <h1 class="name mt-0 mb-1 text-white text-uppercase">
-                  Steve Doe
+                  {{this.person.name.first + " " + this.person.name.last}}
                 </h1>
                 <div class="title mb-3">{{ rolefunction }}</div>
                 <ul class="list-unstyled">
@@ -97,7 +97,8 @@
               Career Summary
             </h2>
             <div class="resume-section-content">
-              <p class="mb-0" v-html="summary"></p>
+<!--              <p class="mb-0" v-html="summary"></p>-->
+              <p class="mb-0" v-html="person.summary"></p>
             </div>
           </section>
 
@@ -362,12 +363,17 @@
 </template>
 
 <script>
+  import yaml from 'js-yaml';
+  import {
+    PERSON
+  } from './resume.yml';
 import "./_Resume2.scss";
 
 export default {
   props: {},
   data() {
     return {
+      person: yaml.load(PERSON),
       title: "Resume2",
       fullname: "Steve Doe",
       rolefunction: "Full Stack Developer FFi",
@@ -395,20 +401,11 @@ export default {
       ],
 
       summary:
-        "Summarise your career here.\n" +
-        '<a class="text-reset" href="#" target="_blank"\n' +
-        " >You can make a PDF version of your resume using our free\n" +
-        " Sketch template here</a\n" +
-        "  >. Aenean commodo ligula eget dolor aenean massa. Cum sociis\n" +
-        "   natoque penatibus et magnis dis parturient montes, nascetur\n" +
-        " ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.\n" +
-        "   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean\n" +
-        " commodo ligula eget dolor. Aenean massa. Cum sociis natoque\n" +
-        " penatibus et magnis dis parturient montes, nascetur ridiculus\n" +
-        "mus. Donec quam felis, ultricies nec, pellentesque eu, pretium\n" +
-        " quis, sem. Nulla consequat massa quis enim. Donec pede justo,\n" +
-        " fringilla vel, aliquet nec, vulputate eget. Lorem ipsum dolor\n" +
-        " sit amet, consectetuer adipiscing elit.",
+        "Summarise your career here. " +
+        '<a class="text-reset" href="#" target="_blank">You can make a PDF version of your resume using our free Sketch template here</a>. ' +
+        "Aenean commodo ligula eget dolor aenean massa. " +
+        "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu." +
+        " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 
       workexperiences: [
         {
