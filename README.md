@@ -46,6 +46,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - https://github.com/Justineo/vue-awesome/tree/master/src/icons/regular
 - 
 
+## netlify deploy
+
+- https://levelup.gitconnected.com/task-management-application-using-vue-js-part-2-d785a96acda6
+- 
+
 ## tips
 
 ### to read json in page:
