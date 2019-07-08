@@ -2,8 +2,6 @@
   <div class="home">
     <Hero />
     <FeaturedPosts />
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
 
     <div class="sections">
       <div
