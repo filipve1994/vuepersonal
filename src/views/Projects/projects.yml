@@ -1,0 +1,59 @@
+/* #*/ export const project = `
+- name: FVE BLOG 2019-06-28
+  category: frontend
+  categories: [frontend, blogging]
+  description: |
+    A blogging theme for Developers
+  url: https://filipve1994.github.io
+  src: https://github.com/filipve1994/filipve1994.github.io
+  client: FVE
+  image: "https://filipve1994.github.io/assets/images/icons/facebook_profile_image.png"
+  technologies: [Jekyll, Ruby, SASS]
+  dateupdated: '2019-06-28'
+- name: FVE BLOG2 2019-06-27
+  category: backend
+  categories: [backend, blogging]
+  description: |
+    A blogging theme for Developers backend
+  url: https://filipve1994.github.io
+  src: https://github.com/filipve1994/filipve1994.github.io
+  client: FVE2
+  image: "https://filipve1994.github.io/assets/images/icons/facebook_profile_image.png"
+  technologies: [Jekyll, Ruby, SASS]
+  dateupdated: '2019-06-27'
+- name: Project heading 2019-06-26
+  category: Webapp
+  categories: [Webapp]
+  description: Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.
+  url: #
+  src: #
+  client: google
+  image: "https://themes.3rdwavemedia.com/devcard/bs4/2.0/assets/images/project/project-1.jpg"
+  technologies: [React, Angular, MongoDB]
+  dateupdated: '2019-06-26'
+- name: Project heading 2019-06-24
+  category: Webapp
+  categories: [Webapp]
+  description: Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.
+  url: #
+  src: #
+  client: google
+  image: "https://themes.3rdwavemedia.com/devcard/bs4/2.0/assets/images/project/project-1.jpg"
+  technologies: [React, Angular, MongoDB]
+  dateupdated: '2019-06-24'
+- name: Project heading3 2019-06-25
+  category: Webapp
+  categories: [Webapp]
+  description: Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes.
+  url: #
+  src: #
+  client: google
+  image: "https://themes.3rdwavemedia.com/devcard/bs4/2.0/assets/images/project/project-1.jpg"
+  technologies: [Jekyll]
+  dateupdated: '2019-06-25'
+
+
+
+
+
+  `

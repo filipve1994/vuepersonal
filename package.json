@@ -18,7 +18,9 @@
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-awesome": "^3.5.4",
+    "vue-images-loaded": "^1.1.2",
     "vue-router": "^3.0.3",
+    "vueisotope": "^3.1.2",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -30,6 +32,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "mixitup": "^3.3.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "style-resources-loader": "^1.2.1",

@@ -57,18 +57,31 @@ export default new Router({
         import(/* webpackChunkName: "resume2" */ "./views/Resume2/Resume2.vue")
     },
     {
+      path: "/testmix",
+      name: "testmix",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+          import(/* webpackChunkName: "cheatsheets" */ "./views/TestMix/TestMix.vue")
+    },
+    {
+      path: "/projects",
+      name: "projects",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+          import(/* webpackChunkName: "cheatsheets" */ "./views/Projects/Projects.vue")
+    },
+    {
       path: "/cheatsheets",
       name: "cheatsheets",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "cheatsheets" */ "./views/Cheatsheets/Cheatsheets.vue"),
-      children: CheatsheetEntries.map(entry => ({
-        path: entry.id,
-        name: entry.id,
-        component: () => import(`./markdowns/cheatsheets/${entry.id}.md`)
-      }))
+        import(/* webpackChunkName: "cheatsheets" */ "./views/Cheatsheets/Cheatsheets.vue")
     },
     {
       path: "/cheatsheetsingle",
